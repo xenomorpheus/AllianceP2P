@@ -30,7 +30,7 @@ public class Language {
 
     private static TreeSet<String> AVAILABLE_LANGUAGES;
     private static ResourceBundle LANGUAGE_BUNDLE;
-    private static final String LANGUAGE_PATH = "language/";
+    private static final String LANGUAGE_PATH = "language/";  // TODO try getResource instead
     private static final String PACKAGES_HEAD = "org.alliance.";
     private static final String BUNDLE_FILE = "alliance_";
     private static final String MISSING_TEXT = "%Missing translation!%";

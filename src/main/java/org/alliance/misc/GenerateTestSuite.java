@@ -1,17 +1,5 @@
 package org.alliance.misc;
 
-import com.stendahls.nif.util.xmlserializer.SXML;
-import com.stendahls.nif.util.xmlserializer.XMLSerializer;
-import org.alliance.core.settings.Friend;
-import org.alliance.core.settings.Internal;
-import org.alliance.core.settings.My;
-import org.alliance.core.settings.Plugin;
-import org.alliance.core.settings.Server;
-import org.alliance.core.settings.Settings;
-import org.alliance.core.settings.Share;
-import org.alliance.launchers.testsuite.Main;
-import org.w3c.dom.Document;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
@@ -22,6 +10,19 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+
+import org.alliance.core.settings.Friend;
+import org.alliance.core.settings.Internal;
+import org.alliance.core.settings.My;
+import org.alliance.core.settings.Plugin;
+import org.alliance.core.settings.Server;
+import org.alliance.core.settings.Settings;
+import org.alliance.core.settings.Share;
+import org.alliance.launchers.testsuite.Main;
+import org.w3c.dom.Document;
+
+import com.stendahls.nif.util.xmlserializer.SXML;
+import com.stendahls.nif.util.xmlserializer.XMLSerializer;
 
 
 /**
@@ -47,7 +48,6 @@ public class GenerateTestSuite {
 
     public GenerateTestSuite(String shareDirectory) throws Exception {
         this.shareDirectory = shareDirectory;
-        File shareDir = new File(shareDirectory);
         if (!new File(shareDirectory).exists()) {
             System.err.println("Directory with fake share test data does not exist: " + shareDirectory + ".");
             System.exit(1);

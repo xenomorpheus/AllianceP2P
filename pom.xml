@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>AllianceP2P</groupId>
+	<artifactId>AllianceP2P</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/net.contentobjects.jnotify/jnotify -->
+		<dependency>
+			<groupId>net.contentobjects.jnotify</groupId>
+			<artifactId>jnotify</artifactId>
+			<version>0.94</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.dockingframes/docking-frames-common -->
+		<dependency>
+			<groupId>org.dockingframes</groupId>
+			<artifactId>docking-frames-common</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>stendahls</groupId>
+			<artifactId>com.stendahls</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/stendahls.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>clink</groupId>
+			<artifactId>com.clink</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/clink.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>jdic</groupId>
+			<artifactId>com.jdic</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jdic.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>trident</groupId>
+			<artifactId>com.trident</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/trident.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>substance-lite</groupId>
+			<artifactId>com.substance-lite</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/substance-lite.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>swingx</groupId>
+			<artifactId>com.swingx</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/swingx-0.8.0.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>idw-gpl</groupId>
+			<artifactId>com.idw-gpl</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/idw-gpl.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>h2</groupId>
+			<artifactId>com.h2</artifactId>
+			<version>1.2.136</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/h2-1.2.136.jar</systemPath>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<!-- add to the Jar's manifest to tell it the main. -->
+							<mainClass>org.alliance.core.CoreSubsystem</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.6</version>
+				<!-- Make sure not to steal focus from Firefox on OSX -->
+				<configuration>
+					<systemProperties>
+						<java.awt.headless>true</java.awt.headless>
+					</systemProperties>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

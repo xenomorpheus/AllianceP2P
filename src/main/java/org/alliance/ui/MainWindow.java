@@ -67,6 +67,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.TreeMap;
 import javax.swing.Icon;
@@ -92,7 +93,11 @@ import org.alliance.ui.windows.mdi.InvitationsMDIWindow;
  */
 public class MainWindow extends XUIFrame implements MenuItemDescriptionListener, MDIManagerEventListener, Runnable {
 
-    private UISubsystem ui;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5966451329188131962L;
+	private UISubsystem ui;
     private JLabel statusMessage, shareMessage;
     private JProgressBar bandwidthIn, bandwidthOut;
     private ToolbarActionManager toolbarActionManager;
@@ -113,7 +118,12 @@ public class MainWindow extends XUIFrame implements MenuItemDescriptionListener,
         int[] imageSizes = {16, 24, 32, 48, 64, 128};
         ArrayList<Image> images = new ArrayList<Image>();
         for (int size : imageSizes) {
-            images.add((new ImageIcon(getClass().getResource("/res/gfx/icons/alliance" + size + ".png")).getImage()));
+        	URL icon_url = getClass().getResource("/res/gfx/icons/alliance" + size + ".png");
+        	if (icon_url == null){
+        		throw new RuntimeException("Failed to find url for alliance icon, size="+size);
+        	}
+        	ImageIcon icon = new ImageIcon(icon_url);
+            images.add(icon.getImage());
         }
         this.setIconImages(images);
 
@@ -126,7 +136,11 @@ public class MainWindow extends XUIFrame implements MenuItemDescriptionListener,
         rescan = (JButton) xui.getComponent("rescan");
         rescan.setFocusPainted(false);
         refreshIconStates[0] = rescan.getIcon();
-        refreshIconStates[1] = new ImageIcon(getClass().getResource("/res/gfx/icons/icon.png"));
+        URL icon_url = getClass().getResource("/res/gfx/icons/icon.png");
+        if (icon_url == null){
+        	throw new RuntimeException("failed to find icon.png");
+        }
+        refreshIconStates[1] = new ImageIcon(icon_url);
         SubstanceThemeHelper.flatButton(rescan);
 
         bandwidthIn = (JProgressBar) xui.getComponent("bandwidthin");

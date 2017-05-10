@@ -1,0 +1,10 @@
+.project
+.classpath
+.metadata
+/.settings/
+/target
+/derby.log
+/target/
+/bin/
+/logs/
+/data/

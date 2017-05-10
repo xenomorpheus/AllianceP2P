@@ -60,7 +60,7 @@ public class Main {
             }
             Subsystem core = initCore(s, (StartupProgressListener) r);
             if (core == null) {
-                return; //oops. core crashed. Error message has been displayd. just bail.
+                return; //oops. core crashed. Error message has been displayed. just bail.
             }
             Subsystem tray = null;
             try {
