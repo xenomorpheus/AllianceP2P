@@ -4,6 +4,9 @@
 	<groupId>AllianceP2P</groupId>
 	<artifactId>AllianceP2P</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>AllianceP2P</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

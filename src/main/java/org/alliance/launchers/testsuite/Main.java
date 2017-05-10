@@ -41,7 +41,7 @@ public class Main {
     private CoreSubsystem core;
     private UISubsystem ui;
     private String settings;
-    private static JList list;
+    private static JList<Main> list;
 
     public Main() {
     }
@@ -113,7 +113,7 @@ public class Main {
         XUIFrame frame = new XUIFrame(Main.TEST_SUITE_DIRNAME + File.separator + "testsuite.xui.xml");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getXUI().setEventHandler(new Main());
-        list = new JList(new DefaultListModel());
+        list = new JList<Main>(new DefaultListModel<Main>());
         JScrollPane p = (JScrollPane) frame.getXUI().getComponent("sp");
         p.setViewportView(list);
         frame.display();
@@ -127,7 +127,7 @@ public class Main {
                         @Override
                         public void run() {
                             try {
-                                Main m = (Main) list.getSelectedValue();
+                                Main m = list.getSelectedValue();
                                 m.launchUI();
                             } catch (Exception e1) {
                                 e1.printStackTrace();
@@ -148,7 +148,7 @@ public class Main {
 
                     @Override
                     public void run() {
-                        ((DefaultListModel) list.getModel()).addElement(m);
+                        ((DefaultListModel<Main>) list.getModel()).addElement(m);
                     }
                 });
             }
@@ -195,21 +195,21 @@ public class Main {
     }
 
     public void EVENT_openui(ActionEvent e) throws Exception {
-        Main m = (Main) list.getSelectedValue();
+        Main m = list.getSelectedValue();
         if (m != null) {
             m.launchUI();
         }
     }
 
     public void EVENT_start(ActionEvent e) throws Exception {
-        Main m = (Main) list.getSelectedValue();
+        Main m = list.getSelectedValue();
         if (m != null) {
             m.launchCore();
         }
     }
 
     public void EVENT_stop(ActionEvent e) throws Exception {
-        Main m = (Main) list.getSelectedValue();
+        Main m = list.getSelectedValue();
         if (m != null) {
             m.shutdown();
         }

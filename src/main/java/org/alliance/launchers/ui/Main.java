@@ -28,6 +28,8 @@ import java.io.PrintWriter;
 public class Main {
 
     private static final int STARTED_SIGNAL_PORT = 56345;
+    private static final int LOCAL_SIGNAL_PORT = 56346;
+
     private static String link = "";
 
     public static void main(String[] args) {
@@ -140,6 +142,7 @@ public class Main {
             OutputStream o = s.getOutputStream();
             o.write(startUI ? 1 : 0);
             o.flush();
+            s.close();
             Thread.sleep(1000);
             System.out.println("Program already running. Closing this program instance.");
             System.exit(0);
@@ -272,7 +275,7 @@ public class Main {
             @Override
             public void run() {
                 try {
-                    listenServerSocket = new ServerSocket(56346, 0, InetAddress.getByName("127.0.0.1"));
+                    listenServerSocket = new ServerSocket(LOCAL_SIGNAL_PORT, 0, InetAddress.getByName("127.0.0.1"));
                     while (true) {
                         try {
                             Socket s = listenServerSocket.accept(); //connection is made on this port if user wants to open the ui
@@ -308,11 +311,12 @@ public class Main {
             if (args != null) {
                 for (String string : args) {
                     if (string.contains(".alliance")) {
-                        Socket s = new Socket("127.0.0.1", 56346);
+                        Socket s = new Socket("127.0.0.1", LOCAL_SIGNAL_PORT);
                         OutputStream o = s.getOutputStream();
                         o.write(string.getBytes());
                         o.flush();
                         o.close();
+                        s.close();
                         System.out.println("Argument passed.");
                         break;
                     }
