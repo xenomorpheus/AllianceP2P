@@ -4,7 +4,11 @@ import java.io.Serializable;
 
 public class Routerule implements Serializable {
 
-    public final static Integer ALLOW = 1;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public final static Integer ALLOW = 1;
     public final static Integer DENY = 0;
     //Weather it is a allow or a deny rule
     private Integer ruletype;

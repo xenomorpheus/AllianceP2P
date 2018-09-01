@@ -8,4 +8,9 @@ import org.alliance.core.SynchronizedNeedsUserInteraction;
  */
 public class NewVersionAvailableInteraction extends SynchronizedNeedsUserInteraction {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 }

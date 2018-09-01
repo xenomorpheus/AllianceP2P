@@ -18,7 +18,11 @@ import java.util.Random;
  */
 public class Invitation implements Serializable {
 
-    private int invitationPassKey;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int invitationPassKey;
     private String completeInvitaitonString;
     private long createdAt;
     private long validTime;

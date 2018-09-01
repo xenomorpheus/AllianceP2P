@@ -8,7 +8,12 @@ package org.alliance.core;
  */
 public abstract class SynchronizedNeedsUserInteraction implements NeedsUserInteraction {
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
     public boolean canRunInParallelWithOtherInteractions() {
         return false;
     }

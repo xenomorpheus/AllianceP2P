@@ -17,7 +17,11 @@ import java.io.IOException;
  */
 public class ChatMessage extends PersistantRPC {
 
-    private String message;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String message;
     private boolean messageToAll;
     private long sentAtTick;
 

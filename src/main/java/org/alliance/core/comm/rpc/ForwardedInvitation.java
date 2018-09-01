@@ -15,7 +15,11 @@ import java.io.IOException;
  */
 public class ForwardedInvitation extends PersistantRPC {
 
-    private String invitationCode;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String invitationCode;
     private int fromGuid;
     private String fromNickname;
 

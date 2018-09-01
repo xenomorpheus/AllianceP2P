@@ -17,7 +17,11 @@ import java.io.Serializable;
  */
 public abstract class PersistantRPC extends RPC implements Serializable {
 
-    private int destinationGuid;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int destinationGuid;
     private long timestamp;
     protected boolean hasBeenQueuedForLaterSend;
 

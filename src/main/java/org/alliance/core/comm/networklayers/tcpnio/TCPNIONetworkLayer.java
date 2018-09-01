@@ -216,7 +216,7 @@ public class TCPNIONetworkLayer implements Runnable {
             try {
                 selector.select();
                 //process all keys
-                for (Iterator it = selector.selectedKeys().iterator(); it.hasNext();) {
+                for (Iterator<SelectionKey> it = selector.selectedKeys().iterator(); it.hasNext();) {
                     SelectionKey key = (SelectionKey) it.next();
                     it.remove();
 

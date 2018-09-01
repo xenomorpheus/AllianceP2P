@@ -367,10 +367,10 @@ public class Console {
             params.remove(0);
         }
 
-        String query = "";
-        for (String s : params) {
-            query += s + " ";
-        }
+//        String query = "";
+//        for (String s : params) {
+//            query += s + " ";
+//        }
 
         printer.println("Searching in " + ft.description() + "...");
         SimpleTimer st = new SimpleTimer();

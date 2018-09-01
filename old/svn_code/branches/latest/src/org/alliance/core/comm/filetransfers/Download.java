@@ -379,7 +379,7 @@ public class Download {
         return state;
     }
 
-    //its up to this class, noone else
+    //its up to this class, no one else
     private void setState(State state) {
         this.state = state;
     }

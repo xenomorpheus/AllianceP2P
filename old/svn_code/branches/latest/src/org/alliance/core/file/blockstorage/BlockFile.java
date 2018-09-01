@@ -51,7 +51,7 @@ public final class BlockFile {
             blockOffsets[i] = -1;
         }
         if (fd.getSize() > 30 * GB) {
-            //a limit becasue blockOffsets are saves as signed shorts. No more then around 32000 blocks is supported
+            //a limit because blockOffsets are saves as signed shorts. No more then around 32000 blocks is supported
             throw new RuntimeException("File seems to be larger then 30GB. This system does not handle files over 30GB.");
         }
     }

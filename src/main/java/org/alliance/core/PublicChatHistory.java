@@ -12,11 +12,19 @@ import java.util.Collection;
  */
 public class PublicChatHistory implements Serializable {
 
-    private static final int NUMBERS_OF_MESSAGES_IN_HISTORY = 50;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private static final int NUMBERS_OF_MESSAGES_IN_HISTORY = 50;
 
     public static class Entry implements Serializable {
 
-        public long tick;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		public long tick;
         public int fromGuid;
         public String message;
 

@@ -507,7 +507,7 @@ public class UPnPManager extends ControlPoint implements DeviceChangeListener {
         }
 
         try {
-            Enumeration interfaces =
+            Enumeration<NetworkInterface> interfaces =
                     NetworkInterface.getNetworkInterfaces();
 
             if (interfaces != null) {

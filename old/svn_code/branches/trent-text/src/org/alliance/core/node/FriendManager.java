@@ -465,7 +465,7 @@ public class FriendManager extends Manager {
             n = me.getNumberOfInvitedFriends();
         }
         if (n <= 3) {
-            return 4; //three invities is "experienced" - if noone has more then 4 are needed to become king
+            return 4; //three invites is "experienced" - if no one has more then 4 are needed to become king
         }
         return n;
     }

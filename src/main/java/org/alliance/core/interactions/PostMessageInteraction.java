@@ -11,7 +11,11 @@ import org.alliance.core.SynchronizedNeedsUserInteraction;
  */
 public class PostMessageInteraction extends SynchronizedNeedsUserInteraction {
 
-    private String message;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String message;
     private long sentAtTick;
     private int fromGuid;
     private boolean messageWasPersisted;

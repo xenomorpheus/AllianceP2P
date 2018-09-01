@@ -9,7 +9,12 @@ package org.alliance.core.interactions;
  */
 public class PostMessageToAllInteraction extends PostMessageInteraction {
 
-    public PostMessageToAllInteraction(String message, int fromGuid) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public PostMessageToAllInteraction(String message, int fromGuid) {
         super(message, fromGuid);
     }
 

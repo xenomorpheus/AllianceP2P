@@ -50,7 +50,7 @@ public class HandshakeConnection extends PacketConnection {
         try {
             protocolVersion = p.readInt();
         } catch (BufferUnderflowException e) {
-            //this was reported by several users..  somethings fishy going on here    
+            //this was reported by several users..  something fishy going on here
             throw new IOException("Received truncated package at start of connection?!");
         }
         byte connectionType = p.readByte();
@@ -96,10 +96,14 @@ public class HandshakeConnection extends PacketConnection {
             Friend friend = netMan.getFriendManager().getFriend(guid);
 
             if (protocolVersion > Version.PROTOCOL_VERSION) {
-                throw new RuntimeException("User " + netMan.getFriendManager().getFriend(guid).getNickname() + " has a newer version of Alliance then you. It cannot be updated automatically. Talk to him about it.");
+                throw new RuntimeException("User " + netMan.getFriendManager().getFriend(guid).getNickname()
+                + " has a newer version of Alliance then you. It cannot be updated automatically. Talk to him about it."
+                + "\nTheir version "+protocolVersion + ", yours "+Version.PROTOCOL_VERSION);
             }
             if (protocolVersion < Version.PROTOCOL_VERSION) {
-                throw new RuntimeException("User " + netMan.getFriendManager().getFriend(guid).getNickname() + " has an old (incompatible) version of Alliance. Talk to him about it.");
+                throw new RuntimeException("User " + netMan.getFriendManager().getFriend(guid).getNickname()
+                 + " has an old (incompatible) version of Alliance. Talk to him about it."
+                 + "\nTheir version "+protocolVersion + ", yours "+Version.PROTOCOL_VERSION);
             }
 
             //successfully connected to friend

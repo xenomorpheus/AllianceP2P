@@ -10,7 +10,11 @@ import org.alliance.core.NeedsUserInteraction;
  */
 public class NewFriendConnectedUserInteraction implements NeedsUserInteraction {
 
-    private int guid;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int guid;
 
     public NewFriendConnectedUserInteraction() {
     }
