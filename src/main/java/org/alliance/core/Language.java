@@ -95,9 +95,8 @@ public class Language {
         }
     }
 
-    public static void translateXUIElements(Class<?> c, Collection coll) {
-        for (Object o : coll) {
-            XUIElement element = (XUIElement) o;
+    public static void translateXUIElements(Class<?> c, Collection<XUIElement> coll) {
+        for (XUIElement element : coll) {
             JComponent comp = (JComponent) element.getComponent();
             if (comp.getToolTipText() != null && !comp.getToolTipText().trim().isEmpty()) {
                 String text = getResource(c, "xui", element.getId(), "tooltip");
