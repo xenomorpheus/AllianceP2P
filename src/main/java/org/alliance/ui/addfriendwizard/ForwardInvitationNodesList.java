@@ -30,6 +30,10 @@ import javax.swing.UIManager;
  */
 public class ForwardInvitationNodesList extends JList {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private UISubsystem ui;
     private AddFriendWizard addFriendWizard;
 
@@ -89,6 +93,11 @@ public class ForwardInvitationNodesList extends JList {
 
     private static class CheckListRenderer extends JCheckBox implements ListCellRenderer {
 
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
+
         public CheckListRenderer() {
             setBackground(UIManager.getColor("List.textBackground"));
             setForeground(UIManager.getColor("List.textForeground"));
@@ -129,6 +138,10 @@ public class ForwardInvitationNodesList extends JList {
 
     public static class ForwardInvitationListModel extends DefaultListModel {
 
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
         private CoreSubsystem core;
 
         public ForwardInvitationListModel(final CoreSubsystem core) {

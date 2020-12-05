@@ -20,6 +20,10 @@ import javax.swing.text.JTextComponent;
  */
 public class CutCopyPastePopup extends JPopupMenu implements ActionListener {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JTextComponent target;
 
     public CutCopyPastePopup(JTextComponent target) {

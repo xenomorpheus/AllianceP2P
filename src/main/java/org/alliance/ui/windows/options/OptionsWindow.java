@@ -26,6 +26,10 @@ import org.alliance.ui.dialogs.OptionDialog;
  */
 public class OptionsWindow extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private UISubsystem ui;
     private ArrayList<TabHelper> tabs = new ArrayList<TabHelper>();
 

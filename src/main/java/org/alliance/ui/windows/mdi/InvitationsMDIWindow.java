@@ -25,6 +25,10 @@ import org.alliance.core.node.Node;
  */
 public class InvitationsMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JTable table;
     private UISubsystem ui;
     private JPopupMenu popup;
@@ -164,6 +168,11 @@ public class InvitationsMDIWindow extends AllianceMDIWindow {
     }
 
     private class InvitationTableModel extends DefaultTableModel {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         protected InvitationTableModel() {
             super();

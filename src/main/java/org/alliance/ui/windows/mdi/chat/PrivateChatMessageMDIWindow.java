@@ -17,6 +17,10 @@ import java.io.IOException;
  */
 public class PrivateChatMessageMDIWindow extends AbstractChatMessageMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private int guid;
 
     public PrivateChatMessageMDIWindow(UISubsystem ui, int guid) throws Exception {

@@ -18,6 +18,10 @@ import javax.swing.JPanel;
  */
 public class SecurityTab extends XUIDialog implements TabHelper {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JCheckBox allowFriends;
     private JCheckBox denyAll;
     private JCheckBox allowTrustedFriends;

@@ -15,6 +15,10 @@ import java.util.HashMap;
  */
 public class NodeTreeModel extends DefaultTreeModel {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private HashMap<Integer, NodeTreeNode> cache = new HashMap<Integer, NodeTreeNode>();
 
     public NodeTreeModel() {

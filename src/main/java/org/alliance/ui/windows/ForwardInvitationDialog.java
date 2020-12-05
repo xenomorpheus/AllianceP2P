@@ -19,6 +19,10 @@ import javax.swing.JCheckBox;
  */
 public class ForwardInvitationDialog extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JCheckBox alwaysAllowInvite;
     private boolean pressedYes = false;
 

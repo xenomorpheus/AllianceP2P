@@ -39,6 +39,10 @@ import javax.swing.tree.TreeSelectionModel;
 
 public class SharesWindow extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private UISubsystem ui;
     private JTree sharesTree;
     private JCheckBox autoSort;

@@ -31,6 +31,11 @@ public class FileDescriptor {
 
     public static class FileModifiedWhileHashingException extends IOException {
 
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
+
         public FileModifiedWhileHashingException() {
         }
 

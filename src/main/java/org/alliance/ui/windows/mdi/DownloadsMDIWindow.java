@@ -50,6 +50,10 @@ import javax.swing.JFileChooser;
  */
 public class DownloadsMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private DownloadsTableModel model;
     private JDownloadGrid downloadGrid;
     private JTable table;
@@ -362,6 +366,11 @@ public class DownloadsMDIWindow extends AllianceMDIWindow {
     }
 
     private class DownloadsTableModel extends AbstractTableModel {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public int getRowCount() {
@@ -707,6 +716,11 @@ public class DownloadsMDIWindow extends AllianceMDIWindow {
     }
 
     public class ProgressBarCellRenderer extends JProgressBar implements TableCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         public ProgressBarCellRenderer() {
             super(0, 100);

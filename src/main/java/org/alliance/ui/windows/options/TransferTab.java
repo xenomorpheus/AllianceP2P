@@ -19,6 +19,10 @@ import javax.swing.JTextField;
  */
 public class TransferTab extends XUIDialog implements TabHelper {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JPanel tab;
     private UISubsystem ui;
     private final static String[] OPTIONS = new String[]{

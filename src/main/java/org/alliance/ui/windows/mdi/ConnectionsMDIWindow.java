@@ -23,6 +23,10 @@ import javax.swing.JTable;
  */
 public class ConnectionsMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JTable table;
     private ConnectionsTableModel model;
     private ArrayList<ConnectionWrapper> rows = new ArrayList<ConnectionWrapper>();
@@ -119,6 +123,11 @@ public class ConnectionsMDIWindow extends AllianceMDIWindow {
     }
 
     private class ConnectionsTableModel extends AbstractTableModel {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public int getRowCount() {

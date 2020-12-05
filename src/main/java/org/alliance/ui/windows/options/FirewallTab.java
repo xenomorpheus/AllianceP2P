@@ -24,6 +24,10 @@ import org.alliance.ui.windows.AddRuleWindow;
  */
 public class FirewallTab extends XUIDialog implements TabHelper {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JList ruleList;
     private DefaultListModel ruleListModel;
     private JPanel tab;

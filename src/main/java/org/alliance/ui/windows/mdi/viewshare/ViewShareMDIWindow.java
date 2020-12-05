@@ -55,6 +55,10 @@ import javax.swing.ToolTipManager;
  */
 public class ViewShareMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private Node remote;
     private JTree tree;
     private ViewShareTreeModel model;
@@ -449,6 +453,11 @@ public class ViewShareMDIWindow extends AllianceMDIWindow {
     }
 
     private class ViewShareTreeRenderer extends DefaultTreeCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public Component getTreeCellRendererComponent(

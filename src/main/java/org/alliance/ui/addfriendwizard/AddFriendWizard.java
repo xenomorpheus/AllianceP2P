@@ -40,6 +40,10 @@ import java.net.URLConnection;
  */
 public class AddFriendWizard extends JWizard {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     public static final int STEP_INTRO = 0;
     public static final int STEP_INVITATION_LIMIT = 1;
     public static final int STEP_ENTER_INVITATION = 2;

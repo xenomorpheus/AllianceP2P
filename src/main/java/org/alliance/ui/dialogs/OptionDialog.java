@@ -31,6 +31,10 @@ import org.alliance.core.Language;
 
 public class OptionDialog extends JDialog implements ActionListener {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     public static final int BORDER = 5;
     private Map<Character, String> eventKeyMap = new HashMap();
     private KeyListener keyListener;
@@ -99,6 +103,11 @@ public class OptionDialog extends JDialog implements ActionListener {
         }
 
         JHtmlLabel l = new JHtmlLabel() {
+
+            /**
+             *
+             */
+            private static final long serialVersionUID = 1L;
 
             @Override
             public Dimension getPreferredSize() {

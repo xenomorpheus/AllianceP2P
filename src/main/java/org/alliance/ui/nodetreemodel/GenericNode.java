@@ -5,6 +5,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 public class GenericNode extends DefaultMutableTreeNode implements IdentifiableTreeNode {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private String text;
     private Icon image;
 

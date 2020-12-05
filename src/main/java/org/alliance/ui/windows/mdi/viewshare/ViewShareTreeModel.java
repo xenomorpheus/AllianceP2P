@@ -20,6 +20,10 @@ import java.util.ArrayList;
  */
 public class ViewShareTreeModel extends DefaultTreeModel {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private Node node;
     private CoreSubsystem core;
     private UISubsystem ui;

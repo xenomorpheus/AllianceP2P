@@ -22,6 +22,10 @@ import javax.swing.SwingUtilities;
  */
 public class ConsoleMDIWindow extends AllianceMDIWindow implements Console.Printer {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JTextArea textarea;
     private JTextField chat;
     private Console console;

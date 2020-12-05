@@ -15,6 +15,10 @@ import java.util.TreeSet;
 
 public class ViewFoundVia extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private DefaultListModel fofListModel;
     private JList fofList;
 

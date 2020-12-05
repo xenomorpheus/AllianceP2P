@@ -14,6 +14,11 @@ import java.util.BitSet;
  */
 public class BlockMask extends BitSet {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     public BlockMask() {
     }
 

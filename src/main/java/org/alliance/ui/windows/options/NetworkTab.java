@@ -30,6 +30,10 @@ import javax.swing.event.PopupMenuListener;
  */
 public class NetworkTab extends XUIDialog implements TabHelper {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JPanel tab;
     private JComboBox nicBox;
     private JCheckBox ipv6;

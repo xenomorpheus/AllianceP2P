@@ -18,6 +18,10 @@ import javax.swing.JPanel;
  */
 public class TraceMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private TraceWindow tw;
 
     public TraceMDIWindow(UISubsystem ui) throws Exception {

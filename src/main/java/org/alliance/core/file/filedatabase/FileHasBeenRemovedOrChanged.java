@@ -9,6 +9,10 @@ package org.alliance.core.file.filedatabase;
  */
 public class FileHasBeenRemovedOrChanged extends Exception {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private FileDescriptor fd;
 
     public FileHasBeenRemovedOrChanged(FileDescriptor fd) {

@@ -21,6 +21,10 @@ import javax.swing.event.PopupMenuListener;
  */
 public class GeneralTab extends XUIDialog implements TabHelper {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JPanel tab;
     private UISubsystem ui;
     private JComboBox language;

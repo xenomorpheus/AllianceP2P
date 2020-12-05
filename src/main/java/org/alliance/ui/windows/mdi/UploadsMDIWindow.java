@@ -26,6 +26,10 @@ import javax.swing.table.AbstractTableModel;
  */
 public class UploadsMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private UploadsMDIWindow.UploadsTableModel model;
     private JTable table;
     private ArrayList<UploadWrapper> rows = new ArrayList<UploadsMDIWindow.UploadWrapper>();
@@ -136,6 +140,11 @@ public class UploadsMDIWindow extends AllianceMDIWindow {
     }
 
     private class UploadsTableModel extends AbstractTableModel {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public int getRowCount() {

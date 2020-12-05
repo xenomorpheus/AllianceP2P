@@ -19,6 +19,11 @@ import javax.swing.JFrame;
  */
 public class ConnectedToNewFriendDialog extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     public ConnectedToNewFriendDialog(UISubsystem ui, JFrame f, String name) throws Exception {
         super(ui.getRl(), ui.getRl().getResourceStream("xui/newfriendconnection.xui.xml"), f, true);
         Language.translateXUIElements(getClass(), xui.getXUIComponents());

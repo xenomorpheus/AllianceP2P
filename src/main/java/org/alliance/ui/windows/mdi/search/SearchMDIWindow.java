@@ -52,6 +52,10 @@ import javax.swing.tree.TreePath;
  */
 public class SearchMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JXTreeTable table;
     private SearchTreeTableModel model;
     private JComboBox type;
@@ -425,6 +429,11 @@ public class SearchMDIWindow extends AllianceMDIWindow {
 
     public class NameCellRenderer extends DefaultTreeCellRenderer {
 
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
+
         @Override
         public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus) {
             super.getTreeCellRendererComponent(tree, value, sel, expanded, leaf, row, hasFocus);
@@ -449,6 +458,11 @@ public class SearchMDIWindow extends AllianceMDIWindow {
     }
 
     public class BytesizeCellRenderer extends DefaultTableCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public Component getTableCellRendererComponent(JTable table, Object value,
@@ -477,6 +491,11 @@ public class SearchMDIWindow extends AllianceMDIWindow {
     }
 
     public class DaysOldCellRenderer extends DefaultTableCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public Component getTableCellRendererComponent(JTable table, Object value,
@@ -509,6 +528,11 @@ public class SearchMDIWindow extends AllianceMDIWindow {
     }
 
     public class SourcesCellRenderer extends DefaultTableCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public Component getTableCellRendererComponent(JTable table, Object value,
@@ -550,6 +574,11 @@ public class SearchMDIWindow extends AllianceMDIWindow {
     }
 
     public class SpeedCellRenderer extends JProgressBar implements TableCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         public SpeedCellRenderer() {
             super(0, 100);

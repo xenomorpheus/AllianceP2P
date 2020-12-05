@@ -24,6 +24,10 @@ import javax.swing.JToolBar;
  */
 public abstract class AllianceMDIWindow extends MDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     protected XUI xui;
     protected String mdiWindowIdentifier;
     protected UISubsystem ui;

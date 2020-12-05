@@ -16,6 +16,10 @@ import javax.swing.JTextField;
 
 public class AddRuleWindow extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private UISubsystem ui;
     private ArrayList<JRadioButton> radioButtons = new ArrayList<JRadioButton>();
     private final static String[] OPTIONS = new String[]{"ip_addr1",

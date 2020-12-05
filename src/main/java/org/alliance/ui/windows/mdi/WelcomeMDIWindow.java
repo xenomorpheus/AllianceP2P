@@ -19,6 +19,10 @@ import org.alliance.core.Language;
  */
 public class WelcomeMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     public static final String IDENTIFIER = "welcome";
     private JHtmlLabel label;
     private UISubsystem ui;

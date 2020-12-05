@@ -23,6 +23,10 @@ import javax.swing.SwingUtilities;
  */
 public class NodeTreeNode extends GenericNode {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private ArrayList<NodeTreeNode> children;
     private NodeTreeNode parent;
     private Node node;

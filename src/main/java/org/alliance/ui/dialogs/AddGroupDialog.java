@@ -15,6 +15,10 @@ import javax.swing.JTextField;
  */
 public class AddGroupDialog extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private String groupName;
 
     public AddGroupDialog(UISubsystem ui, JFrame f) throws Exception {

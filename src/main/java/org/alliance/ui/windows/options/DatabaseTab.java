@@ -20,6 +20,10 @@ import javax.swing.filechooser.FileFilter;
  */
 public class DatabaseTab extends XUIDialog implements TabHelper {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JPanel tab;
     private UISubsystem ui;
     private final static String[] OPTIONS = new String[]{"internal.hashspeedinmbpersecond",

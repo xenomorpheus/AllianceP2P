@@ -35,6 +35,10 @@ import javax.swing.SwingUtilities;
 
 public class ErrorDialog extends XUIDialog {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private static String errorReportUrl = "";
     private Throwable error;
     private Throwable innerError;

@@ -29,6 +29,10 @@ import javax.swing.tree.DefaultTreeCellRenderer;
  */
 public class FriendsTreeMDIWindow extends AllianceMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private UISubsystem ui;
     private JTree tree;
     private ImageIcon iconMe, iconFriend, iconNode, iconFriendDimmed, iconNodeDimmed, iconRecursion;
@@ -100,6 +104,11 @@ public class FriendsTreeMDIWindow extends AllianceMDIWindow {
     }
 
     private class FriendCellRenderer extends DefaultTreeCellRenderer {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
 
         @Override
         public Component getTreeCellRendererComponent(

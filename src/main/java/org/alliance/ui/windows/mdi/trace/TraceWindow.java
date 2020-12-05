@@ -34,6 +34,10 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 public class TraceWindow extends XUIFrame implements TraceHandler {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JTable table;
     private TraceTableModel model;
     private JScrollPane scrollPane;
@@ -228,7 +232,12 @@ public class TraceWindow extends XUIFrame implements TraceHandler {
 
     private class ColoredRenderer extends DefaultTableCellRenderer {
 
-        private final Color[] LEVELS_BG = {new Color(16777215), new Color(16316927), new Color(15400931), new Color(16777145), new Color(16770019)};
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
+        private final Color[] LEVELS_BG = { new Color(16777215), new Color(16316927), new Color(15400931),
+                new Color(16777145), new Color(16770019) };
         private final Color[] LEVELS_FG = {new Color(10592673), new Color(5592405), new Color(0), new Color(0), new Color(0)};
         private TraceWindow.TraceTableModel model;
 
@@ -251,6 +260,10 @@ public class TraceWindow extends XUIFrame implements TraceHandler {
 
     private class TraceTableModel extends AbstractTableModel {
 
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
         private transient ArrayList lines = new ArrayList(4096);
         private HashSet filteredChannels = new HashSet(10);
         private boolean[] filteredLevels = {false, false, false, false, false};

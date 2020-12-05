@@ -16,6 +16,11 @@ import java.io.IOException;
  */
 public class PublicChatMessageMDIWindow extends AbstractChatMessageMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     public PublicChatMessageMDIWindow(UISubsystem ui) throws Exception {
         super(ui.getMainWindow().getMDIManager(), "publicchat", ui);
         Language.translateXUIElements(getClass(), xui.getXUIComponents());

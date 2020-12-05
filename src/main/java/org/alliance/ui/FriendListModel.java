@@ -19,6 +19,10 @@ import javax.swing.SwingUtilities;
  */
 public class FriendListModel extends DefaultListModel {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private boolean ignoreFires;
     private CoreSubsystem core;
     private UISubsystem ui;

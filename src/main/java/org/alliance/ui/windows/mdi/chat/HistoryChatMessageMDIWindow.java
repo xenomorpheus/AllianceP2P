@@ -20,6 +20,10 @@ import org.alliance.ui.UISubsystem;
  */
 public class HistoryChatMessageMDIWindow extends AbstractChatMessageMDIWindow {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private JComboBox chatCombo;
     private JCheckBox links;
     private ArrayList<String> chatTypes = new ArrayList<String>();
