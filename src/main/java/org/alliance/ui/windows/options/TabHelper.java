@@ -7,7 +7,7 @@ import javax.swing.JPanel;
  *
  * @author Bastvera
  */
-public interface TabHelper {   
+public interface TabHelper {
 
     public JPanel getTab();
 

@@ -144,8 +144,8 @@ public abstract class BlockStorage extends Thread {
      * @param root
      * @param blockNumber
      * @param sliceOffset The offset into this block at wich the slice should be saved
-     * @param fd 
-     * @param slice 
+     * @param fd
+     * @param slice
      * @param dir
      * @return Number of bytes written
      * @throws IOException

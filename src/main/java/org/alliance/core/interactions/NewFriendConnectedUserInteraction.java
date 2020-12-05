@@ -9,10 +9,6 @@ import org.alliance.core.NeedsUserInteraction;
  * Time: 16:58:19
  */
 public class NewFriendConnectedUserInteraction implements NeedsUserInteraction {
-
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int guid;
 

@@ -8,10 +8,6 @@ package org.alliance.core.interactions;
  * To change this template use File | Settings | File Templates.
  */
 public class PostMessageToAllInteraction extends PostMessageInteraction {
-
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	public PostMessageToAllInteraction(String message, int fromGuid) {

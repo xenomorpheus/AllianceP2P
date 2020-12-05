@@ -10,9 +10,6 @@ import org.alliance.core.SynchronizedNeedsUserInteraction;
  */
 public class FriendAlreadyInListUserInteraction extends SynchronizedNeedsUserInteraction {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int guid;
 

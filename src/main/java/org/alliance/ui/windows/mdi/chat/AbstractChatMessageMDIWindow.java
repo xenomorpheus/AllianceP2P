@@ -252,7 +252,7 @@ public abstract class AbstractChatMessageMDIWindow extends AllianceMDIWindow imp
             ChatLine l = chatLines.last();
             if (!messageHasBeenQueuedAwayForAWhile) {
                 //A message gets queued away when a user is offline and cannot receive the message.
-                //If this message has NOT been queued then it should always be displayed as the last message received 
+                //If this message has NOT been queued then it should always be displayed as the last message received
                 //in the chat
                 tick = System.currentTimeMillis();
             }

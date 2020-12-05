@@ -65,7 +65,7 @@ public class FileDescriptor {
 
     /**
      * Creates a new file descriptor from scratch. Including creating hashes.
-     * @param basePath 
+     * @param basePath
      * @param file
      * @param hashSpeedInMbPerSecond
      * @param callback
@@ -259,10 +259,8 @@ public class FileDescriptor {
             if (T.t) {
                 T.warn("Base path " + fd.basePath + " is not existant. For File " + fd.subPath + " - have to throw it way.");
             }
-         
             return null;
         }
-      
         return fd;
     }
 

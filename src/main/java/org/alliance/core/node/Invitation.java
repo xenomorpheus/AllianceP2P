@@ -17,10 +17,6 @@ import java.util.Random;
  * Time: 14:20:47
  */
 public class Invitation implements Serializable {
-
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int invitationPassKey;
     private String completeInvitaitonString;

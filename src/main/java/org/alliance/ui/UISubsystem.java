@@ -48,9 +48,9 @@ public class UISubsystem implements UINexus, Subsystem {
     }
 
     /**
-     * @param rl 
+     * @param rl
      * @param params - takes one parameter - a boolean indicating if Alliance should shutdown when window closes
-     * @throws Exception 
+     * @throws Exception
      */
     @Override
     public void init(ResourceLoader rl, final Object... params) throws Exception {

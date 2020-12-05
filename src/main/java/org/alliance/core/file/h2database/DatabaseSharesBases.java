@@ -37,7 +37,7 @@ public class DatabaseSharesBases {
             ps.setString(1, basePath);
             ps.executeUpdate();
         } catch (SQLException ex) {
-            //TODO ONLY Detection of duplicate pk exception     
+            //TODO ONLY Detection of duplicate pk exception
         }
     }
 

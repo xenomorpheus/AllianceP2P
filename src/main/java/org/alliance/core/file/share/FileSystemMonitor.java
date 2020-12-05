@@ -40,7 +40,7 @@ public class FileSystemMonitor {
         while (watchers.size() > 0) {
             if (T.t) {
                 T.info("Should stop win32 watcher: " + watchers.get(0) + " but removing is buggy so just let it run in background.");
-            }        
+            }
             watchers.remove(0);
         }
     }

@@ -35,9 +35,8 @@ public class Search extends RPC {
         query = in.readUTF();
 
         core.logNetworkEvent("Search query " + query + " from " + con.getRemoteFriend());
-    
+
         byte type = in.readByte();
-      
         SearchHits sh = new SearchHits();
         ArrayList<SearchHit> hitList = core.getShareManager().getFileDatabase().getSearchHits(query, type, MAX_SEARCH_HITS);
         for (SearchHit hit : hitList) {

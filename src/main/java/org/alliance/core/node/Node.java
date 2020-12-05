@@ -91,7 +91,7 @@ public abstract class Node {
 
     public void setFriendsFriends(HashMap<Integer, UntrustedNode> friendsFriends) {
         this.friendsFriends = friendsFriends;
-    }   
+    }
 
     public long getShareSize() {
         return 0;
@@ -103,7 +103,7 @@ public abstract class Node {
 
     public int getAllianceBuildNumber() {
         return 0;
-    }  
+    }
 
     public int getNumberOfFilesShared() {
         return 0;

@@ -581,7 +581,7 @@ public class CoreSubsystem implements Subsystem {
     }
 
     /** Adds this callback using a DoubleUICallback class
-     * @param u 
+     * @param u
      */
     public void addUICallback(UICallback u) {
         uiCallback = new DoubleUICallback(uiCallback, u);
@@ -787,7 +787,7 @@ public class CoreSubsystem implements Subsystem {
 
     /**
      * Logs network messages for debug purposes. An event can be for example "user x went online"
-     * @param event 
+     * @param event
      */
     public void logNetworkEvent(String event) {
         uiCallback.logNetworkEvent(event);

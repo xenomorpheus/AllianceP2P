@@ -64,7 +64,7 @@ public class DuplicatesMDIWindow extends AllianceMDIWindow {
         //TODO: Duplicates Deleting
         /*if (table.getSelectedColumnCount() <= 0 && table.getSelectedRowCount() <= 0) {
         return;
-        }      
+        }
 
         ArrayList<String> filesThatNeedHashing = new ArrayList<String>();
         ArrayList<String> al = new ArrayList<String>();

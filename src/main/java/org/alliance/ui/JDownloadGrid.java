@@ -16,9 +16,6 @@ import javax.swing.JComponent;
  */
 public class JDownloadGrid extends JComponent {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int BLOCK_WIDTH = 8, BLOCK_HEIGHT = 8;
     private Download download;

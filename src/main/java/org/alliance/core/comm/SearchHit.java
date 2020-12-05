@@ -4,7 +4,7 @@ import org.alliance.core.file.hash.Hash;
 
 /**
  * A search hit - the result of a search. One search hit per file that matched the search. Contains root tiger hash,
- * file path (incl. file name), file size and the age of the file in number of days. 
+ * file path (incl. file name), file size and the age of the file in number of days.
  * User: maciek
  * Date: 2006-feb-01
  * Time: 20:23:27
@@ -27,7 +27,7 @@ public class SearchHit {
         this.size = size;
         this.hashedDaysAgo = hashedDaysAgo;
     }
-    
+
      public SearchHit(Hash root, String path, long size, String basepath, int hashedDaysAgo) {
         this.root = root;
         this.path = path;

@@ -25,7 +25,7 @@ public abstract class RPC {
      */
     protected transient boolean routable = false;
     /**
-     * Can this RPC be broadcasted in an exponential fashion to my friends and their friends? Not used right now 
+     * Can this RPC be broadcasted in an exponential fashion to my friends and their friends? Not used right now
      */
     protected transient boolean broadcastable = false;
     protected transient int fromGuid, hops;
@@ -49,7 +49,7 @@ public abstract class RPC {
      * @param rpcc
      * @param fromGuid
      * @param numHops
-     * @return 
+     * @return
      */
     public RPC init(FriendConnection rpcc, int fromGuid, int numHops) {
         this.con = rpcc;

@@ -16,10 +16,6 @@ import java.io.Serializable;
  *
  */
 public abstract class PersistantRPC extends RPC implements Serializable {
-
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int destinationGuid;
     private long timestamp;
@@ -39,7 +35,7 @@ public abstract class PersistantRPC extends RPC implements Serializable {
 
     /**
      * Return true if this PersistantRPC is older than a month.
-     * @return 
+     * @return
      */
     public boolean hasExpired() {
         return System.currentTimeMillis() - timestamp > ((long) 1000) * 60 * 60 * 24 * 31;

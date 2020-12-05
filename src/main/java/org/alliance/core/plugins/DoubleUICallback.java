@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.TreeMap;
 
 /**
- * Used by PlugIns to hook onto the UICallback of core.  
+ * Used by PlugIns to hook onto the UICallback of core.
  *
  * User: maciek
  * Date: 2008-jun-06

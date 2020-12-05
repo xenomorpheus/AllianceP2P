@@ -17,7 +17,7 @@ import java.io.IOException;
 public class PlugInCommunication extends PersistantRPC {
 
     /**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 	private String data;

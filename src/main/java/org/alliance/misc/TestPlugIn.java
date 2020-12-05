@@ -67,7 +67,7 @@ public class TestPlugIn implements PlugIn {
     public void init(CoreSubsystem core) throws Exception {
 
         everInitialized = true;
-        
+
         this.core = core;
         this.nickname = core.getSettings().getMy().getNickname();
 
@@ -133,7 +133,7 @@ public class TestPlugIn implements PlugIn {
 
     public class TestUICallback extends NonWindowUICallback {
         public boolean active = false;
-        
+
         public void testDuplicateCallbacksInChain() {
             //System.out.println("-------------------- TestUICallback for " + nickname + " was called!  Active: " + active + "  hash: " + this.hashCode() + "  Method: " + Thread.currentThread().getStackTrace()[2]);
             if (active) {

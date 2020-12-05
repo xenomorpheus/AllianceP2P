@@ -247,7 +247,7 @@ public class FileDatabase {
                     hashArray.add(new Hash(result.getBytes(ID_HASH)));
                 }
                 Hash[] hashList = hashArray.toArray(new Hash[hashArray.size()]);
-                // System.out.println("getFD - " + (System.currentTimeMillis() - time));             
+                // System.out.println("getFD - " + (System.currentTimeMillis() - time));
                 FileDescriptor fd = new FileDescriptor(basePath, subPath, size, rootHash, hashList, modifiedAt);
                 changeInUseQueue(false);
                 return fd;

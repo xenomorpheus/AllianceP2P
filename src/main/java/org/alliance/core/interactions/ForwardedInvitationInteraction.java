@@ -13,9 +13,6 @@ import org.alliance.core.node.Friend;
  */
 public class ForwardedInvitationInteraction extends SynchronizedNeedsUserInteraction {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private String invitationCode;
     private int middlemanGuid;

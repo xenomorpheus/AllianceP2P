@@ -50,7 +50,7 @@ public abstract class Connection {
 
     protected abstract int getConnectionId();
 
-    //can be overridden by connection to perform stuff when connection breaks - used by 
+    //can be overridden by connection to perform stuff when connection breaks - used by
     public void signalConnectionAttemtError() {
     }
 
@@ -95,7 +95,7 @@ public abstract class Connection {
     }
 
     /** Close this connection
-     * @throws IOException 
+     * @throws IOException
      */
     public void close() throws IOException {
         connected = false;

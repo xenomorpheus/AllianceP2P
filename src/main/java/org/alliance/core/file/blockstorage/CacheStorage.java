@@ -25,7 +25,7 @@ public class CacheStorage extends BlockStorage {
         String path = bf.getFd().getFullPath();
         if (T.t) {
             T.info("File in cache complete: " + path);
-        }       
+        }
     }
 
     @Override

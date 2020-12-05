@@ -160,7 +160,7 @@ public class SiteUpdate implements Runnable {
             throw new Exception();
         }
     }
-    
+
     public void prepareUpdate() {
         try {
             if (updateAttemptHasBeenMade) {

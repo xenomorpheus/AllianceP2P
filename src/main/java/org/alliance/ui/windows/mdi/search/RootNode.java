@@ -52,7 +52,6 @@ public class RootNode extends SearchTreeNode {
 
     public void addSearchHits(int sourceGuid, int hops, List<SearchHit> hits) {
         for (SearchHit h : hits) {
-                   
             String fn = TextUtils.makeSurePathIsMultiplatform(h.getPath());
 
             String filename = fn;
@@ -128,7 +127,7 @@ public class RootNode extends SearchTreeNode {
     private void resortTable() {
         for(SearchTreeNode t : children ){
 
-   
+
         }
 
         if (secondaryComparator != null) {

@@ -249,7 +249,7 @@ public class RPCFactory { //Old RPC can be reused after increasing PROTOCOL_VERS
         if (rpc instanceof AwayStatus) {
             return 34;
         }
-        //Old RPC ChatMessageV2 return 35; v1.0.6  
+        //Old RPC ChatMessageV2 return 35; v1.0.6
         if (rpc instanceof ChatMessage) {
             return 36;
         }

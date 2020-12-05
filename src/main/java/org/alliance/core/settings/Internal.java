@@ -661,5 +661,5 @@ public class Internal extends SettingClass {
 
     public void setAutosortshares(Integer autosortshares) {
         this.autosortshares = autosortshares;
-    }  
+    }
 }

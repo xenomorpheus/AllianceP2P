@@ -93,9 +93,6 @@ import org.alliance.ui.windows.mdi.InvitationsMDIWindow;
  */
 public class MainWindow extends XUIFrame implements MenuItemDescriptionListener, MDIManagerEventListener, Runnable {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 5966451329188131962L;
 	private UISubsystem ui;
     private JLabel statusMessage, shareMessage;

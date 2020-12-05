@@ -298,7 +298,7 @@ public class GenerateTestSuite {
         // make a directory
         File subDir = new File(dir.getPath() + File.separator + fileNum + File.separator);
         subDir.mkdir();
-        
+
         // now either make a file here or recurse
         int depth = dir.getPath().split(File.separator).length;
         if (Math.random() * 15 < depth) {

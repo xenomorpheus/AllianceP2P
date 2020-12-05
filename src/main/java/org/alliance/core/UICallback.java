@@ -39,7 +39,7 @@ public interface UICallback {
      * @param friend
      * @param shareBaseIndex
      * @param path
-     * @param fileSize 
+     * @param fileSize
      */
     void receivedDirectoryListing(Friend friend, int shareBaseIndex, String path, TreeMap<String, Long> fileSize);
 
@@ -141,7 +141,7 @@ public interface UICallback {
      *   friend.getFriendConnection().send(new PlugInCommunication("MYBOT\tmy data"));
      * }
      * The friend on the other side will then receive an event of this type with the String data containing
-     * "MYBOT\tmy data".  
+     * "MYBOT\tmy data".
      * @param source The source friend that sent this message
      * @param data The data contained within this message. It's up to the creator of the plugin to decide what this
      * should contain. When doing a plugin make sure to prefix the data-string with something unique for your plugin.

@@ -253,7 +253,7 @@ public final class BlockFile {
     /**
      * @param blockNumber
      * @param sliceOffset
-     * @param slice 
+     * @param slice
      * @return Number of bytes written, or -1 if the block is complete
      * @throws IOException
      */

@@ -11,9 +11,6 @@ import org.alliance.core.SynchronizedNeedsUserInteraction;
  */
 public class PleaseForwardInvitationInteraction extends SynchronizedNeedsUserInteraction {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private String invitationCode;
     private int toGuid;

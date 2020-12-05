@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 public class Routerule implements Serializable {
 
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public final static Integer ALLOW = 1;
     public final static Integer DENY = 0;

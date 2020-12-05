@@ -35,7 +35,7 @@ public class HashesForPath extends CompressedRPC {
     }
 
     @Override
-    public void serializeCompressed(DataOutputStream out) throws IOException {     
+    public void serializeCompressed(DataOutputStream out) throws IOException {
         out.writeInt(fdList.size());
         for (FileDescriptor fd : fdList) {
             out.write(fd.getRootHash().array());
@@ -79,7 +79,6 @@ public class HashesForPath extends CompressedRPC {
 
         for (FileDescriptor fd : fdList) {
             String commonPath = TextUtils.makeSurePathIsMultiplatform(fd.getSubPath());
-          
             if (downloadDir != null && downloadDir.isEmpty()) {
                 downloadDir = core.getFileManager().getDownloadStorage().getCustomDownloadDir(con.getRemoteUserGUID(), commonPath);
             }

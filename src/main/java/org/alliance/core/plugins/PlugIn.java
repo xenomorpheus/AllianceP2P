@@ -12,14 +12,14 @@ import org.alliance.core.CoreSubsystem;
 public interface PlugIn {
 
     abstract void init(CoreSubsystem core) throws Exception;
-    
+
     /**
      * Returns the callback object for the debug console.
-     * 
+     *
      * Return null if no debug console extensions are implemented
-     * @return 
+     * @return
      */
-    
+
     abstract ConsolePlugInExtension getConsoleExtensions();
 
     /**
