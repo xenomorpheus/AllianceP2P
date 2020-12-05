@@ -34,7 +34,7 @@
 			<artifactId>com.stendahls</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/stendahls.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/stendahls.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -42,7 +42,7 @@
 			<artifactId>com.clink</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/clink.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/clink.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -50,7 +50,7 @@
 			<artifactId>com.jdic</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/jdic.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/jdic.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -58,7 +58,7 @@
 			<artifactId>com.trident</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/trident.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/trident.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -66,7 +66,7 @@
 			<artifactId>com.substance-lite</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/substance-lite.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/substance-lite.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -74,7 +74,7 @@
 			<artifactId>com.swingx</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/swingx-0.8.0.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/swingx-0.8.0.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -82,7 +82,7 @@
 			<artifactId>com.idw-gpl</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/idw-gpl.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/idw-gpl.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -90,7 +90,7 @@
 			<artifactId>com.h2</artifactId>
 			<version>1.2.136</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/h2-1.2.136.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/h2-1.2.136.jar</systemPath>
 		</dependency>
 
 	</dependencies>
